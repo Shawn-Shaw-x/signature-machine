@@ -25,7 +25,7 @@
 ### 获取源码
 
 ```bash
-git clone https://github.com/yourname/yourproject.git
+git clone https://github.com/Shawn-Shaw-x/signature-machine
 cd signature-machine
 ```
 ### 构建项目
