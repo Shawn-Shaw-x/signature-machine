@@ -2,7 +2,7 @@ package config
 
 import (
 	"github.com/urfave/cli/v2"
-	"signature-machine-eth/flags"
+	"signature-machine/flags"
 )
 
 type ServerConfig struct {

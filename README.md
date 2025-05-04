@@ -1,20 +1,64 @@
-## 第一步：搭建环境
-- go mod init 一个空环境
-- git init 托管到 github，新建 .gitignore 文件用于排除 github 提交文件
-- 新建空的 .env 文件用于环境变量读取
+# 📦 signature-machine web3通用型签名机
 
-## 第二步：搭建控制台应用框架
-- 建立文件夹 cmd/signature,并新建 main.go 文件，这是程序的主入口
-- 相同文件夹下建立 cli.go，使用 urfave/cle/v2 作为命令行应用的框架
-- 新建 Makefile 文件用于管理 shell 命令
-- 测试 version 命令是否正常运行
+> 本项目是一个基于 Go 实现的通用性签名机服务。提供 ECDSA、EdDSA 地址批量生成能力，并支持消息签名。
 
-## 第三步：搭建 RPC 框架
-- 编写 proto 文件，定义好接口、输入输出消息
-- proto 生成 go 代码
-- 读取配置，包括 Grpc 的 host、port 和 LevelDB 的路径
-- 打开 LevelDB 连接
-- 启动 GRPC 服务，注册 proto 定义好的路由进去
+---
 
-## 第四步：实现接口
+## ✨ 功能特性
+
+- 🚀 支持批量地址生成
+- 🔐 多种签名方式支持（ECDSA、EdDSA）
+- ⭐️ 程序内安全保障、私钥永不泄漏
+- 🛠 高性能、轻量级设计
+- 📦 提供 Cli 工具 / Grpc 服务
+
+---
+
+## 📥 安装与使用
+
+### 环境要求
+
+- Go 1.20+
+- Git
+- Make
+
+### 获取源码
+
+```bash
+git clone https://github.com/yourname/yourproject.git
+cd signature-machine
+```
+### 构建项目
+```bash
+make ./signature
+```
+### 运行项目
+```bash
+./signature rpc
+```
+```bash
+grpcui -plaintext 127.0.0.1:8983
+```
+### 运行测试
+```bash
+make test
+```
+## 🗂 项目结构
+```bash
+signature-machine/
+├── bin/            # protobuf 生成管理
+├── cmd/            # 程序入口
+├── common/         # 公共库
+├── config/         # 默认配置文件
+├── data/         # leveldb 生成文件
+├── flags/           # 环境变量定义
+├── leveldb/        # leveldb 代码
+├── protobuf/        # protobuf 代码
+├── services/        # Grpc 代码及接口实现
+├── ssm/        # ecdsa、eddsa 库封装
+├── Makefile    # shell 命令管理
+├── go.mod
+├── README.md
+```
+
 

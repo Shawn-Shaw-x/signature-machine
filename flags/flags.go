@@ -30,22 +30,6 @@ var (
 		EnvVars: prefixEnvVars("LEVEL_DB_PATH"),
 		Value:   "./",
 	}
-	CredentialsFileFlag = &cli.StringFlag{
-		Name:    "credentials-file",
-		Usage:   "the credentials file of cloud hsm",
-		EnvVars: prefixEnvVars("CREDENTIALS_FILE"),
-	}
-	KeyNameFlag = &cli.StringFlag{
-		Name:    "key-name",
-		Usage:   "The key name of cloud hsm",
-		EnvVars: prefixEnvVars("KEY_NAME"),
-	}
-	HsmEnable = &cli.BoolFlag{
-		Name:    "hsm-enable",
-		Usage:   "Hsm enable",
-		EnvVars: prefixEnvVars("HSM_ENABLE"),
-		Value:   false,
-	}
 )
 
 var requireFlags = []cli.Flag{
@@ -54,14 +38,8 @@ var requireFlags = []cli.Flag{
 	LevelDbPathFlag,
 }
 
-var optionalFlags = []cli.Flag{
-	CredentialsFileFlag,
-	KeyNameFlag,
-	HsmEnable,
-}
-
 var Flags []cli.Flag
 
 func init() {
-	Flags = append(requireFlags, optionalFlags...)
+	Flags = append(requireFlags)
 }

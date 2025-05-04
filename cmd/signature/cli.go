@@ -5,11 +5,11 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/urfave/cli/v2"
-	"signature-machine-eth/common/cliapp"
-	"signature-machine-eth/config"
-	"signature-machine-eth/flags"
-	"signature-machine-eth/leveldb"
-	"signature-machine-eth/services/rpc"
+	"signature-machine/common/cliapp"
+	"signature-machine/config"
+	"signature-machine/flags"
+	"signature-machine/leveldb"
+	"signature-machine/services/rpc"
 )
 
 func runRpc(ctx *cli.Context, shutdown context.CancelCauseFunc) (cliapp.Lifecycle, error) {

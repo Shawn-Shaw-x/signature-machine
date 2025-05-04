@@ -6,9 +6,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"net"
-	"signature-machine-eth/common/cliapp"
-	"signature-machine-eth/leveldb"
-	"signature-machine-eth/protobuf/wallet"
+	"signature-machine/common/cliapp"
+	"signature-machine/leveldb"
+	"signature-machine/protobuf/wallet"
 	"strconv"
 	"sync/atomic"
 )

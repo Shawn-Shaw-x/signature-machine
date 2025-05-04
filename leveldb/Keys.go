@@ -39,4 +39,5 @@ func (keys *Keys) StoreKeys(keyList []Key) bool {
 			return false
 		}
 	}
+	return true
 }

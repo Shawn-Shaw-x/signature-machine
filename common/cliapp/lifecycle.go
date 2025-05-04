@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"os"
-	"signature-machine-eth/common/opio"
+	"signature-machine/common/opio"
 
 	"github.com/urfave/cli/v2"
 )
