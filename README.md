@@ -2,6 +2,7 @@
 
 > 本项目是一个基于 Go 实现的通用性签名机服务。提供 ECDSA、EdDSA 地址批量生成能力，并支持消息签名。
 
+> ps：项目大部分代码基于交易所签名机抽象、简化而成。
 ---
 
 ## ✨ 功能特性
@@ -60,5 +61,18 @@ signature-machine/
 ├── go.mod
 ├── README.md
 ```
+
+## 📚 架构图
+- 交易所签名机架构
+  ![image.png](https://img.learnblockchain.cn/attachments/2025/05/oTgu7VHp6817db0fcfbed.png)
+
+- 签名机内部架构
+  ![image.png](https://img.learnblockchain.cn/attachments/2025/05/GNWDLsOa6817db7430004.png)
+
+- TEE 地址生成流程
+  ![image.png](https://img.learnblockchain.cn/attachments/2025/05/YqvaQliK68165d1fe7087.png)
+
+- TEE 签名流程
+  ![image.png](https://img.learnblockchain.cn/attachments/2025/05/OibBv1ea6816608a90d25.png)
 
 
