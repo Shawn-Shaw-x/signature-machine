@@ -1,4 +1,9 @@
 # 📦 signature-machine web3通用型签名机
+![Go Version](https://img.shields.io/badge/go-1.20+-brightgreen)
+![Build](https://img.shields.io/github/actions/workflow/status/Shawn-Shaw-x/signature-machine/go.yml?label=build)
+![Tests](https://img.shields.io/github/actions/workflow/status/Shawn-Shaw-x/signature-machine/test.yml?label=tests)
+![License](https://img.shields.io/github/license/Shawn-Shaw-x/signature-machine)
+![Stars](https://img.shields.io/github/stars/Shawn-Shaw-x/signature-machine?style=social)
 
 > 本项目是一个基于 Go 实现的通用性签名机服务。提供 ECDSA、EdDSA 地址批量生成能力，并支持消息签名。
 
