@@ -22,6 +22,7 @@ func CreateECDSAKeyPair() (string, string, string, error) {
 	return priKeyStr, pubKeyStr, compressPubkeyStr, nil
 }
 
+/*ecdsa 签名消息 hash*/
 func SignECDSAMessage(privKey string, txMsg string) (string, error) {
 	hash := common.HexToHash(txMsg)
 	fmt.Println(hash.Hex())

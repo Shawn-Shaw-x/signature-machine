@@ -80,7 +80,7 @@ func (r *RpcServer) ExportPublicKeyList(ctx context.Context, request *wallet.Exp
 	return resp, nil
 }
 
-// 通过 messageHash 进行签名
+// 通过 messageHash（32字节） 进行签名
 func (r *RpcServer) SignTxMessage(ctx context.Context, request *wallet.SignTxMessageRequest) (*wallet.SignTxMessageResponse, error) {
 	resp := &wallet.SignTxMessageResponse{
 		Code: wallet.ReturnCode_ERROR,
