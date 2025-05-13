@@ -1,4 +1,5 @@
 # 📦 signature-machine web3通用型签名机
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Shawn-Shaw-x/signature-machine)
 ![Go Version](https://img.shields.io/badge/go-1.20+-brightgreen)
 ![Build](https://img.shields.io/github/actions/workflow/status/Shawn-Shaw-x/signature-machine/go.yml?label=build)
 ![Tests](https://img.shields.io/github/actions/workflow/status/Shawn-Shaw-x/signature-machine/test.yml?label=tests)
